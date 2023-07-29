@@ -1,0 +1,32 @@
+/* container */
+.container{
+    /* 桌機 */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+/* 平板
+@media (max-width: 992px){
+
+} */
+/* 手機
+@media (max-width: 767px){
+
+} */
+
+
+/* 背景色 */
+.bg-primary{
+    background-color: $bg-primary;
+}
+.bg-secondary{
+    background-color: $bg-secondary;
+}
+
+// font color
+.text-primary{
+    color: $text-primary;
+}
+.text-secondary{
+    color: $text-secondary;
+}
