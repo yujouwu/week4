@@ -1,5 +1,6 @@
 /* footer */
 .footer{
+    background-color: $color-2;
   padding-top: 48px;
   padding-bottom: 32px;
   @media (max-width: 992px){
@@ -36,7 +37,7 @@
           }
       }
       &-link{
-          color: $text-secondary;
+          color: $color-4;
           height: 100%;
           padding: 12px 24px;
           @media (max-width: 992px){
@@ -69,7 +70,7 @@
   }
   &-contact{
       &-link{
-          color: $text-secondary;
+          color: $color-4;
           font-size: 36px;
           margin-bottom: 8px;
           @media (max-width: 767px){
@@ -90,7 +91,7 @@
   &-copyright{
       display: flex;
       justify-content: space-between;
-      border-top: 1px solid $text-secondary;
+      border-top: 1px solid $color-4;
       padding-top: 32px;
       margin-top: 32px;
       @media (max-width: 767px){
@@ -99,7 +100,7 @@
               gap: 8px;
       }
       &-content{
-          color: $text-secondary;
+          color: $color-4;
       }
       &-menu{
           display: flex;
@@ -113,7 +114,7 @@
       }
       &-link{
           font-size: 14px;
-          color: $text-secondary;
+          color: $color-4;
           @media (max-width: 767px){
                   font-size: 16px;
           }

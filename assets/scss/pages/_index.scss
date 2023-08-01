@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    color: $color-1;
 
     @media (max-width: 992px) {
         background-image: url("/assets/images/home-header-sm.png");
@@ -38,6 +39,8 @@
     }
 
     &-btn {
+        color: $color-4;
+        background-color: $color-2;
         font-size: 20px;
         display: inline-block;
         padding: 6px 12px;
@@ -52,7 +55,7 @@
         }
 
         &:hover {
-            background-color: $text-primary;
+            background-color: $color-1;
             text-decoration: none;
         }
     }
@@ -60,44 +63,47 @@
 
 // main
 .section {
-    &-pd {
+    &-wrap{
         padding-top: 80px;
         padding-bottom: 80px;
-
         @media (max-width: 767px) {
             padding-top: 40px;
             padding-bottom: 40px;
         }
     }
-    &-wrap{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    &-header {
+    &-header{
         font-size: $fz-xl;
-        color: $text-primary;
         font-weight: bold;
         text-align: center;
-        padding-left: 12px;
-        padding-right: 12px;
-        @media (max-width: 767px){
-            font-size: $fz-lg;
-        }
+        color: $color-1;
+        margin-bottom: 24px;
     }
+    &-sub-header{
+        font-size: $fz-xl;
+        font-weight: bold;
+        text-align: center;
+        color: $color-2;
+        font-style: italic;
+        padding-top: 8px;
+    }
+
     &-menu {
         display: flex;
-        text-align: center;
         flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+        row-gap: 24px;
     }
 }
 
 // feature
 .feature {
+    background-color: $color-3;
     &-item {
         padding-right: 12px;
         padding-left: 12px;
-        padding-top: 24px;
         width: 25%;
+        text-align: center;
         @media (max-width: 992px) {
             width: 50%;
         }
@@ -114,7 +120,7 @@
 
     h4 {
         font-size: $fz-lg;
-        color: $text-primary;
+        color: $color-1;
         font-weight: bold;
         margin-bottom: 8px;
     }
@@ -127,22 +133,152 @@
     &-item {
         padding-right: 12px;
         padding-left: 12px;
-        padding-top: 48px;
         width: 33.33%;
         @media (max-width: 992px) {
             width: 100%;
         }
     }
-    h4{
-        font-style: italic;
-        margin-top: 8px;
-    }
     &-img{
+        margin: 0 auto;
+        @media (max-width: 992px) {
+            width: 336px;
+        }
+    }
+}
+.design{
+    background-image: url("/assets/images/index-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .section-header{
+        color: $color-4;
+    }
+    .section-menu{
+        margin: 0px;
+    }
+    .section-sub-header{
+        padding-bottom: 8px;
+    }
+    .item{
+        width: 50%;
+        h4{
+            background-color: $color-4;
+        }
         @media (max-width: 992px){
-            max-width: 336px;
+            width: 100%;
+        }
+        div{
+            width: 100%;
+            height: 240px;
+            background-size: cover;
+        }
+        &-img1{
+            background-image: url("/assets/images/home-section4-1.png");
+            @media (max-width: 767px){
+                background-image: url("/assets/images/home-section4-1-sm.png");
+            }
+        }
+        &-img2{
+            background-image: url("/assets/images/home-section4-2.png");
+            @media (max-width: 767px){
+                background-image: url("/assets/images/home-section4-2-sm.png");
+            }
+        }
+    }
+}
+// reviews
+.reviews{
+    &-item {
+        padding-right: 12px;
+        padding-left: 12px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        .feedback{
+            margin-bottom: auto;
+        }
+        @media (max-width: 992px) {
+            width: 50%;
         }
         @media (max-width: 767px) {
-            max-width: 348px;
+            width: 100%;
+        }
+    }
+    .info{
+        min-height: 205px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        box-shadow: 0px 2px 6px #00000029;
+    }
+    .name{
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    .date{
+        font-size: $fz-sm;
+        color: #707070;
+    }
+}
+.contact{
+    background-color: $color-3;
+    p{
+        font-size: $fz-md;
+        padding-top: 24px;
+        margin-bottom: 24px;
+        @media (max-width: 992px){
+            font-size: $fz-normal;
+            padding-top: 0;
+        }
+    }
+    .section-wrap{
+        max-width: 660px;
+        @media (max-width: 992px) {
+            max-width: 600px;
+        }
+    }
+    .form{
+        .info{
+            display: block;
+            margin-bottom: 8px;
+        }
+        .input {
+            margin-bottom: 16px;
+            width: 100%;
+            padding: 6px 12px;
+        }
+        textarea{
+            min-height: 136px;
+            resize: none;
+        }
+        .privacy{
+            display: flex;
+            align-items: center;
+            @media (max-width: 767px){
+                align-items: flex-start;
+            }
+        }
+        .submit{
+            background-color: $color-2;
+            color: $color-4;
+            font-weight: bold;
+            border: none;
+            display: block;
+            width: 66.66%;
+            margin: 0 auto;
+            padding: 16px 0;
+            margin-top: 40px;
+            &:hover{
+                background-color: $color-1;
+            }
+            @media (max-width: 992px) {
+                width: 60%;;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
         }
     }
 }

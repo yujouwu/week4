@@ -1,5 +1,6 @@
 /* nav */
 .navbar{
+        background-color: $color-2;
   padding: 16px 0;
   @media (max-width: 767px){
           padding-bottom: 0;
@@ -40,7 +41,7 @@
       height: 100%;
       @media (max-width: 767px){
               width: 50%;
-              border: 1px solid #FFFFFF;
+              border: 1px solid $color-4;
       }
       &:last-child .navbar-link{
           padding-right: 0;
@@ -51,7 +52,7 @@
   }
   &-link{
       font-size: 20px;
-      color: $text-secondary;
+      color: $color-4;
       padding: 8px 32px;
       height: 100%;
       @media (max-width: 767px){
