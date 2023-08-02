@@ -1,0 +1,49 @@
+// main
+.section {
+    &-wrap{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @media (max-width: 767px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    &-header{
+        font-size: $fz-xl;
+        font-weight: bold;
+        text-align: center;
+        color: $color-1;
+        margin-bottom: 24px;
+    }
+    &-sub-header{
+        font-size: $fz-xl;
+        font-weight: bold;
+        text-align: center;
+        color: $color-2;
+        font-style: italic;
+        padding-top: 8px;
+    }
+
+    &-menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+        row-gap: 24px;
+    }
+}
+
+// page
+.page-header{
+    border-left: 8px solid $color-5;
+    font-size: $fz-xl;
+    font-weight: bold;
+    padding-left: 16px;
+    margin: 16px 0;
+    @media (max-width: 992px){
+        margin-top: 0;
+    }
+    @media (max-width: 767px){
+        font-size: $fz-lg;
+    }
+}

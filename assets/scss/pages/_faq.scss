@@ -1,22 +1,8 @@
 .faq{
     .section-wrap{
-        @media (max-width: 767px){
+        @mixin mobile{
             padding-top: 40px;
         }
-    }
-    .header{
-        border-left: 8px solid $color-5;
-        font-size: $fz-xl;
-        font-weight: bold;
-        padding-left: 16px;
-        margin: 16px 0;
-        @media (max-width: 992px){
-            margin-top: 0;
-        }
-        @media (max-width: 767px){
-            font-size: $fz-lg;
-        }
-        
     }
     .subtitle{
         font-size: $fz-lg;

@@ -1,16 +1,16 @@
 @import './utils/variables';
-
+@import './utils/mixin';
 
 @import './base/reset';
 @import './base/base';
 @import './base/typography';
 
+@import './utils/helper';
+
+@import './layout/header';
+@import './layout/footer';
 
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
-
-@import './pages/index.scss';
-@import './pages/faq'
+@import './pages/index';
+@import './pages/faq';
+@import './pages/store';

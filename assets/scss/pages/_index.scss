@@ -5,26 +5,26 @@
     background-repeat: no-repeat;
     background-position: center;
     color: $color-1;
+    height: 787px;
 
-    @media (max-width: 992px) {
+    @include pad{
         background-image: url("/assets/images/home-header-sm.png");
+    }
+    @include mobile{
+        height: 396px;
     }
 
     &-wrap {
-        padding-top: 296px;
-        padding-bottom: 296px;
-        text-align: right;
-
-        @media (max-width: 767px) {
-            padding-top: 144px;
-            padding-bottom: 144px;
-        }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     &-news {
         font-size: 36px;
-
-        @media (max-width: 767px) {
+        @include mobile {
             font-size: 16px;
         }
     }
@@ -32,8 +32,7 @@
     &-slogan {
         font-size: 64px;
         font-weight: bold;
-
-        @media (max-width: 767px) {
+        @include mobile{
             font-size: 24px;
         }
     }
@@ -46,11 +45,10 @@
         padding: 6px 12px;
         margin-top: 4px;
 
-        @media (max-width: 992px) {
+        @include pad {
             margin-top: 10px;
         }
-
-        @media (max-width: 767px) {
+        @include mobile{
             margin-top: 8px;
         }
 
@@ -58,41 +56,6 @@
             background-color: $color-1;
             text-decoration: none;
         }
-    }
-}
-
-// main
-.section {
-    &-wrap{
-        padding-top: 80px;
-        padding-bottom: 80px;
-        @media (max-width: 767px) {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-    }
-    &-header{
-        font-size: $fz-xl;
-        font-weight: bold;
-        text-align: center;
-        color: $color-1;
-        margin-bottom: 24px;
-    }
-    &-sub-header{
-        font-size: $fz-xl;
-        font-weight: bold;
-        text-align: center;
-        color: $color-2;
-        font-style: italic;
-        padding-top: 8px;
-    }
-
-    &-menu {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -12px;
-        margin-right: -12px;
-        row-gap: 24px;
     }
 }
 
@@ -104,10 +67,10 @@
         padding-left: 12px;
         width: 25%;
         text-align: center;
-        @media (max-width: 992px) {
+        @include pad{
             width: 50%;
         }
-        @media (max-width: 767px) {
+        @include mobile{
             width: 100%;
         }
     }
@@ -134,13 +97,13 @@
         padding-right: 12px;
         padding-left: 12px;
         width: 33.33%;
-        @media (max-width: 992px) {
+        @include pad {
             width: 100%;
         }
     }
     &-img{
         margin: 0 auto;
-        @media (max-width: 992px) {
+        @include pad {
             width: 336px;
         }
     }
@@ -164,7 +127,7 @@
         h4{
             background-color: $color-4;
         }
-        @media (max-width: 992px){
+        @include pad{
             width: 100%;
         }
         div{
@@ -174,13 +137,13 @@
         }
         &-img1{
             background-image: url("/assets/images/home-section4-1.png");
-            @media (max-width: 767px){
+            @include mobile{
                 background-image: url("/assets/images/home-section4-1-sm.png");
             }
         }
         &-img2{
             background-image: url("/assets/images/home-section4-2.png");
-            @media (max-width: 767px){
+            @include mobile{
                 background-image: url("/assets/images/home-section4-2-sm.png");
             }
         }
@@ -198,10 +161,10 @@
         .feedback{
             margin-bottom: auto;
         }
-        @media (max-width: 992px) {
+        @include pad {
             width: 50%;
         }
-        @media (max-width: 767px) {
+        @include mobile{
             width: 100%;
         }
     }
@@ -228,14 +191,14 @@
         font-size: $fz-md;
         padding-top: 24px;
         margin-bottom: 24px;
-        @media (max-width: 992px){
+        @include pad{
             font-size: $fz-normal;
             padding-top: 0;
         }
     }
     .section-wrap{
         max-width: 660px;
-        @media (max-width: 992px) {
+        @include pad {
             max-width: 600px;
         }
     }
@@ -248,6 +211,7 @@
             margin-bottom: 16px;
             width: 100%;
             padding: 6px 12px;
+            background-color: transparent;
         }
         textarea{
             min-height: 136px;
@@ -256,7 +220,7 @@
         .privacy{
             display: flex;
             align-items: center;
-            @media (max-width: 767px){
+            @include mobile{
                 align-items: flex-start;
             }
         }
@@ -273,10 +237,10 @@
             &:hover{
                 background-color: $color-1;
             }
-            @media (max-width: 992px) {
+            @include pad {
                 width: 60%;;
             }
-            @media (max-width: 767px) {
+            @include mobile{
                 width: 100%;
             }
         }
