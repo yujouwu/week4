@@ -1,0 +1,117 @@
+.blog-nav{
+        background-color: $color-1;
+        padding: 13px 0;
+        .navbar-item:first-child .navbar-link{
+            padding-left: 0px;
+        }
+        .navbar-link{
+            font-weight: bold;
+            padding: 0px 24px;
+        }
+        .icon{
+            font-size: 30px;
+            color: $color-4;
+            display: block;
+            &-link:hover{
+                text-decoration: none;
+                transform: scale(1.2);
+            }
+        }
+        @include mobile{
+            display: none;
+        }
+}
+.blog{
+    &-menu{
+        margin-bottom: 124px;
+        @include pad{
+            margin-bottom: 80px;
+        }
+        @include mobile{
+            margin-bottom: 64px;
+        }
+    }
+    &-item{
+        display: flex;
+        margin-bottom: 60px;
+        @include pad{
+            margin-bottom: 24px; 
+        }
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    &-img{
+        width: 50%;
+        @include pad{
+            width: calc(50% - 12px);
+        }
+        @include mobile{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+    &-content{
+        margin-left: 24px;
+        display: flex;
+        flex-direction: column;
+        @include mobile{
+            margin-left: 0px;
+        }
+
+    }
+    &-title{
+        font-size: $fz-normal-x2;
+        color: $color-1;
+        @include pad{
+            font-size: $fz-lg;
+        }
+    }
+    &-subtitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4{
+            font-size: $fz-md;
+            font-weight: $fw-md;
+            @include pad{
+                font-size: $fz-normal;
+            }
+        }
+    }
+    &-text{
+        font-size: $fz-md;
+        color: #555555;
+        flex-grow: 1;
+        margin-top: 16px;
+        @include pad{
+            display: none;
+        }
+        &-short{
+            color: #555555;
+            display: none;
+            font-size: $fz-normal;
+            margin-top: 4px;
+            @include pad{
+                display: block;
+            }
+            @include mobile{
+                display: none;
+            }
+            &:hover{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    &-btn{
+        font-size: 36px;
+        font-weight: 900;
+        color: $color-1;
+        align-self: flex-end;
+        @include pad{
+            display: none;
+        }
+        
+    }
+}

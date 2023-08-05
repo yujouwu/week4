@@ -9,8 +9,11 @@
 
 @import './layout/header';
 @import './layout/footer';
+@import './components/pagination';
 
 
 @import './pages/index';
 @import './pages/faq';
 @import './pages/store';
+@import './pages/branch';
+@import './pages/blog';
