@@ -62,7 +62,6 @@
 // feature
 .feature {
     background-color: $color-3;
-    overflow-x: hidden;
     &-item {
         padding-right: 12px;
         padding-left: 12px;
@@ -114,7 +113,6 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    overflow-x: hidden;
     .section-header{
         color: $color-4;
     }
@@ -189,7 +187,6 @@
 }
 .contact{
     background-color: $color-3;
-    overflow-x: hidden;
     p{
         font-size: $fz-md;
         padding-top: 24px;
